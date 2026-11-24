@@ -1,7 +1,7 @@
 # MEG-mod
 
 **Chemically Modified siRNA Knockdown Efficiency Prediction Platform Based on Multi-view Enhanced Graph Neural Network**
-
+这是我复现的关于预测ASO效力的模型
 ---
 
 ## 📁 Project Structure
