@@ -1,0 +1,22 @@
+# MEG-mod 依赖
+# 基础
+numpy
+pandas
+scipy
+scikit-learn
+
+# 深度学习 / 图神经网络
+torch>=2.0
+torch-geometric
+
+# 序列预训练模型（RNAErnie 碱基嵌入）
+multimolecule
+
+# 交互式预测界面（app.py）
+streamlit
+
+# 说明：
+# 1) RNAcofold 为系统级依赖（ViennaRNA 工具包），需用 conda/系统包管理器安装，
+#    不通过 pip 提供；缺失时只能使用预计算的 cofold_results.pkl。
+# 2) BAN_graph.py 顶部存在 `from chromadb.segment.impl.vector.batch import Batch`，
+#    该导入在本仓库中未被使用，若环境缺少 chromadb 可安全注释掉。
